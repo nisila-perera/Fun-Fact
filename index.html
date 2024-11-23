@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Fact Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-vh-100 d-flex align-items-center justify-content-center py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="glass-card p-4 p-md-5 animate__animated animate__fadeIn">
+                    <h1 class="display-4 text-center mb-4 neon-text">Fun Fact Generator</h1>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <button onclick="getRandomFact()" class="btn-neon w-100 py-3">
+                                <i class="fas fa-random me-2"></i>Random Facts
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button onclick="getNisilaFact()" class="btn-neon w-100 py-3">
+                                <i class="fas fa-star me-2"></i>About Nisila
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button onclick="getAIFact()" class="btn-ai w-100 py-3">
+                                <i class="fas fa-brain me-2"></i>AI Generated
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="fact-display p-4 mb-4">
+                        <p id="factText" class="display-fact text-center mb-0">Click any button to generate a fact! ✨</p>
+                    </div>
+
+                    <div class="custom-fact-section">
+                        <div class="input-group mb-3">
+                            <input type="text" id="customFact" class="form-control custom-input" 
+                                   placeholder="Add your own fun fact..." aria-label="Custom fact">
+                        </div>
+                        <button onclick="addCustomFact()" class="btn-neon w-100 py-3">
+                            <i class="fas fa-plus-circle me-2"></i>Add Fact
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
